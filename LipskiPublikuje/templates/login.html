@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Dodaj Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Opcjonalnie dodaj niestandardowy CSS -->
+    <style>
+        /* Dodaj niestandardowe style */
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+        .form-login {
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+        .form-login .form-control {
+            position: relative;
+            box-sizing: border-box;
+            height: auto;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .form-login label {
+            font-weight: bold;
+        }
+        .form-login button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="text-center">Login</h2>
+    <form class="form-login" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" id="username" name="username">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" name="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+
+    <!-- Dodaj Bootstrap JS (opcjonalnie, jeśli potrzebujesz funkcjonalności Bootstrapa) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'navbar.css' %}">
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a href="/"><img src="https://placeholder.pics/svg/150x50/888888/EEE/Logo" height="70" alt=""/></a>
+    <div class="collapse navbar-collapse" id="navbarExample01">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      {% for category_key, category_name in articles.model.CATEGORY_CHOICES %}
+          <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#contact">{{ category_name }}</a>
+        </li>
+      {% endfor %}
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#contact">Kontakt</a>
+        </li>
+        {% if is_admin == True %}
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#contact">Dodaj artykuł</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="{% url 'logout_view' %}">Wyloguj</a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edycja artykułu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Tło całej strony */
+        }
+        .container.editform {
+            background-color: #ffffff; /* Tło kontenera formularza */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Cień */
+            margin-top: 30px !important;
+            max-width: 800px; /* Ograniczenie szerokości formularza */
+            margin: auto; /* Wyśrodkowanie formularza */
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .form-control {
+            margin-bottom: 20px; /* Dodatkowy odstęp między polami formularza */
+        }
+        .btn-primary {
+            background-color: #007bff; /* Kolor przycisku */
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3; /* Kolor przycisku po najechaniu */
+            border-color: #0056b3;
+        }
+        .ck-editor__editable_inline {
+            min-height: 300px; /* Minimalna wysokość edytora CKEditor */
+        }
+    </style>
+</head>
+<body>
+{% block content %}
+    {% include 'navbar.html' with is_admin=is_admin %}
+    <div class="container editform">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.media }}
+            <div class="form-group">
+                <label for="id_title">Tytuł:</label>
+                <input type="text" class="form-control form-control-lg" id="id_title" name="title" value="{{ form.title.value }}" required>
+            </div>
+            <div class="form-group">
+                <label for="id_content">Treść:</label>
+                {{ form.content }}
+            </div>
+            <div class="form-group">
+                <label for="id_category">Kategoria:</label>
+                {{ form.category }}
+            </div>
+            <div class="form-group">
+                <label for="id_image">Ikona:</label>
+                {{ form.image }}
+            </div>
+            <div class="form-group">
+                <label for="id_Fullimage">Pełny obraz:</label>
+                {{ form.Fullimage }}
+            </div>
+            <button type="submit" class="btn btn-primary">Zapisz zmiany</button>
+        </form>
+    </div>
+    {% include 'footer.html' %}
+    <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+{% endblock %}
+</html>
+

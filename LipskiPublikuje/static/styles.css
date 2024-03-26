@@ -1,0 +1,116 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* About Section Styles */
+.about {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin-top: 20px;
+  text-align: center;
+}
+
+.icons {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.social {
+    margin-right: 10px;
+}
+
+/* Latest Article Styles */
+.newest {
+    margin-top: 20px;
+}
+
+.newest img {
+    border: none;
+    border-radius: 10px;
+}
+.newpub {
+    padding: 5px;
+    color: white;
+    background-color: #00b0b2;
+}
+/* Articles Section Styles */
+.row {
+  align-items: center;
+}
+.articles {
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    border: none;
+}
+.card.articles {
+        box-shadow: 10px 5px #dcdce0;
+        background-color: #ffffff;
+}
+
+.article-image {
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.article-category {
+    color: #333;
+    font-weight: bold;
+}
+
+.card-title {
+    margin-top: 10px;
+}
+
+/* More Articles Section Styles */
+.more-articles {
+    margin-top: 20px;
+}
+
+.more-articles-img {
+    border-radius: 10px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #3f647e;
+    color: #fff;
+    border-radius: 0px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary:hover {
+    transition: 0.5s;
+    background-color: #00b0b2;
+}
+
+.float-end {
+    float: right;
+}
+
+.latest-article-redirect {
+    color: white;
+    text-decoration: none;
+    border: none;
+}
