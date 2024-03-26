@@ -1,0 +1,140 @@
+/* Custom Art Deco Styles */
+
+/* Body and Container Styles */
+body {
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+.container.content {
+  margin-top: 20px;
+}
+
+/* Article Card Styles */
+.article-card {
+  background-color: #ffffff; /* Light gray background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 10px 5px #dcdce0;
+}
+
+.article-header {
+  border-bottom: 1px solid #343a40; /* Dark border bottom */
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.article-title {
+  font-size: 24px;
+  color: #343a40; /* Dark text color */
+  padding: 10px;
+}
+
+.article-meta {
+  color: white; /* Gray text color */
+  background-color: #00b0b2;
+  padding: 10px;
+}
+
+.article-image {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.article-body {
+  color: #343a40; /* Dark text color */
+}
+
+/* Comment Form Styles */
+.comment-form {
+  background-color: #ffffff; /* Light gray background */
+  box-shadow: 10px 5px #dcdce0;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.comment-form h3 {
+  color: #343a40; /* Dark text color */
+}
+
+.form-group label {
+  color: #343a40; /* Dark text color */
+}
+
+.form-control {
+  border: 1px solid #343a40; /* Dark border */
+}
+
+.btn-primary {
+  background-color: #343a40; /* Dark button background */
+  border: 1px solid #343a40; /* Dark button border */
+}
+
+/* Existing Comments Styles */
+.existing-comments {
+  margin-top: 20px;
+}
+
+.existing-comments h3 {
+  color: #343a40; /* Dark text color */
+}
+
+.card {
+  background-color: #ffffff; /* Light gray background */
+  box-shadow: 10px 5px #dcdce0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  color: #343a40; /* Dark text color */
+}
+
+.card-text {
+  color: #343a40; /* Dark text color */
+}
+
+.text-muted {
+  color: #6c757d; /* Gray text color */
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Red button background */
+  border: 1px solid #dc3545; /* Red button border */
+}
+
+/* Sidebar Styles */
+.sidebar {
+  background-color: #ffffff; /* Light gray background */
+  box-shadow: 10px 5px #dcdce0;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.sidebar-title {
+  color: #343a40; /* Dark text color */
+}
+
+.recommended-article {
+  background-color: #f8f9fa; /* Light gray background */
+  border: 1px solid #343a40; /* Dark border */
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.recommended-title {
+  color: #343a40; /* Dark text color */
+}
+
+.recommended-author {
+  color: #6c757d; /* Gray text color */
+}
+
+.btn-primary {
+  background-color: #343a40; /* Dark button background */
+  border: 1px solid #343a40; /* Dark button border */
+}
+
+.adminButtons {
+  padding: 10px;
+}
